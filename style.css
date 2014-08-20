@@ -1,9 +1,54 @@
 .map {
     margin: 0 auto;
-    width: 1000px;
+    width: auto;
     height: auto;
 }
 
+#intro {
+  border-width: 2px;
+  background-color: white;
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 10px 10px 5px #888888;
+  font-family: optima;
+  z-index: 999;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-radius: 25px;
+  padding:10px;
+}
+
+#intro h1 {
+  text-align: center;
+}
+
+#visualization {
+  width: auto;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+svg {
+  display: block;
+  margin: auto;
+}
+
+path {
+  stroke: white;
+  stroke-width: 0.25px;
+  fill: grey;
+}
+
+.hidden {
+  display: none;
+}
+
+.blurred {
+  filter:url(#blur);
+}
 .graticule {
   fill: none;
   stroke: #777;
@@ -19,7 +64,3 @@
   fill: none;
   stroke: #fff;
   stroke-width: .5px;
-
-svg {
-    margin: 0 auto;
-}

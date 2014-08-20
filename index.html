@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<style>
-path {
-  stroke: white;
-  stroke-width: 0.25px;
-  fill: grey;
-}
 
-</style>
 <body>
 <!-- BootStrap stuff -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="http://d3js.org/topojson.v0.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
 <script src="http://d3js.org/d3.hexbin.v0.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<div id = "visualization">
+</div>
+
+<div id = "intro"> 
+	<h1>Alternative Fuel Filling Stations</h1>
+	
+	<h3>Why?</h3>
+	<p>With electric cars becoming cheaper more ubiqutous the excuses for driving one with an internal combustion engine are dwindeling. One major hurdle however, is availability of places to "fill up" your car. Driving 500 miles to see family doesn't work too well if your car has a 150 mile range and the only charging station is in your garage. <br><br>
+		I got interested to look at electric charging stations, and before I knew it I had found a dataset with not just electric charging stations around the country, but all filling stations for alternative fuels. It seemed like a perfect oportunity to use the beautiful d3.hexbins() to gain insite into patterns from the 18k+ datapoints. <br><br>
+		Let me know what you think!</p>
+
+	<h3>How to use</h3>
+	<ul>
+		<li>Sit back and look, or hover over the hexagons for a cool but useless effect!</li>
+	</ul>
+
+	<h3>Resources:</h3>
+	<ul>
+		<li>Dataset: <a href = "http://www.afdc.energy.gov/fuels/data_methods_stations.html"> US Department of Energy</a> </li>
+		<li><a href = "http://d3js.org/"> d3.js </a></li>
+		<li><a href = "https://github.com/d3/d3-plugins/tree/master/hexbin"> d3.hexbin() </a></li>
+	</ul>
+	
+	<p id = "continueText"><strong>Click here to continue on to the visualization!</strong>
+	</p>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>
